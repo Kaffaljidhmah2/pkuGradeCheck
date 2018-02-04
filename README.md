@@ -5,10 +5,10 @@ Many students are having a hard time checking their grades after final exams. Th
 This program written in Python will automatically recognize the validation code, login, check if there are changes in the grade list, and send an e-mail to you if necessary.
 
 ### Environment
-'-Python 3
+-Python 3
 -requests
 -numpy
--PIL or pillow'
+-PIL or pillow
 
 ### Validation Code Recognition
 The ×proc.py× module helps you recognize the specific dean validation code. Here is how it works:
@@ -21,9 +21,9 @@ Accuracy: around 20%, enough for auto-login because it can retry several times.
 ### Finite State Machine
 The program features a *finite state machine* to maintain the states, which can increase the stability.
 There are three states, namely *login, query wait,* and *send email*. 
--*login* The program is trying to login using the pku username and password provided.
--*query wait* The program is waiting for the next check. The interval is 60 seconds by default.
--*send mail* The program is trying to send and e-mail to you using the mailbox address and password provided.
+*login* The program is trying to login using the pku username and password provided.
+*query wait* The program is waiting for the next check. The interval is 60 seconds by default.
+*send mail* The program is trying to send and e-mail to you using the mailbox address and password provided.
 
 ### Main Parameters
 sender: mailbox uesrname.
