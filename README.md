@@ -27,7 +27,7 @@ in getGrade.py:
 ### Validation Code Recognition
 The **proc.py** module helps you recognize the specific dean validation code. Here is how it works:
 1. Split characters
-2. Match with each characters
+2. Match with each character
 
 Accuracy: 57%, enough for auto-login because it can retry several times.
 
