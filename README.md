@@ -27,10 +27,9 @@ in getGrade.py:
 ### Validation Code Recognition
 The **proc.py** module helps you recognize the specific dean validation code. Here is how it works:
 1. Split characters
-2. Construct e-vector, which tells you the number of the connected "black" pixels of each row.
-3. Using **k-NearestNeighbour** to fulfill prediction.
+2. Match with each characters
 
-Accuracy: around 20%, enough for auto-login because it can retry several times.
+Accuracy: 57%, enough for auto-login because it can retry several times.
 
 ### Finite State Machine
 
