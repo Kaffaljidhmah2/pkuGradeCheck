@@ -4,6 +4,7 @@ from PIL import Image
 from heapq import nlargest
 
 cor_pp=dict()
+cor_pp_big=dict()
 f=open('valset_big','r').read().strip()
 for item in f.split('\n'):
     rows=item.strip().split(' ')
@@ -12,7 +13,6 @@ for item in f.split('\n'):
     element=[int(i.strip()) for i in rows[3:]]
     cor_pp_big[label]=np.array(element)
     cor_pp_big[label].resize((h,w))
-cor_pp_big=dict()
 f=open('valset','r').read().strip()
 for item in f.split('\n'):
     rows=item.strip().split(' ')
