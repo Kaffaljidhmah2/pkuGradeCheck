@@ -102,6 +102,7 @@ while (1):
 	try:
 		rept+=1
 		print(str(rept)+' '+state)
+		print(pku_username)
 		if state=='login':
 			Login()
 		elif state=='query wait':
